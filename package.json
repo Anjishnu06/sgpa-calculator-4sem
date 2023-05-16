@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Vtu 3rd sem SGPA Calculator",
   "main": "index.js",
+  "engines":{
+    "node":14.x
+  },
 
   "scripts": {
     "start":"node index.js",
