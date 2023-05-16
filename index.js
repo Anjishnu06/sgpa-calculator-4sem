@@ -15,6 +15,7 @@ let cgpa="";
 app.get("/",function(req,res)
 {
     res.render("index",{result:cgpa});
+    cgpa="";
 });
 
 app.post("/",function(req,res)
