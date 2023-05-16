@@ -9,6 +9,7 @@ const router=express.Router();
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 app.set("view engine","ejs");
+app.set('views', __dirname + '/views');
 let cgpa="";
 
 app.get("/",function(req,res)
