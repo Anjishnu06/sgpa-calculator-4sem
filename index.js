@@ -28,7 +28,9 @@ app.post("/",function(req,res)
     let sub6=req.body.subject6;
     let sub7=req.body.subject7;
     let sub8=req.body.subject8;
-    let total=18;
+    let sub9=req.body.subject9;
+    let sub10=req.body.subject10;
+    let total=21;
     let cred1=getCredit(sub1)*4;
     let cred2=getCredit(sub2)*4;
     let cred3=getCredit(sub3)*3;
@@ -37,7 +39,9 @@ app.post("/",function(req,res)
     let cred6=getCredit(sub6)*1;
     let cred7=getCredit(sub7)*3;
     let cred8=getCredit(sub8)*1;
-    let sum=(cred1+cred2+cred3+cred4+cred5+cred6+cred7+cred8+0.0);
+    let cred9=getCredit(sub9)*1;
+    let cred10=getCredit(sub10)*2;
+    let sum=(cred1+cred2+cred3+cred4+cred5+cred6+cred7+cred8+cred9+cred10+0.0);
     total=sum/total;
     cgpa="SGPA="+total.toString();
     res.redirect("/");
