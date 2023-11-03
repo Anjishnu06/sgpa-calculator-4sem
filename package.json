@@ -4,7 +4,7 @@
   "description": "Vtu 3rd sem SGPA Calculator",
   "main": "index.js",
   "engines": {
-    "node": "14.x"
+    "node": ">=18"
   },
   "scripts": {
     "start": "node index.js",
@@ -17,6 +17,7 @@
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "netlify-lambda": "^2.0.16",
+    "node": "21.1.0",
     "serverless-http": "^3.2.0"
   },
   "keywords": []
